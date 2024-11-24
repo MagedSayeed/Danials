@@ -1,0 +1,480 @@
+/***** Start Global style *****/
+body {
+  font-family: "Poppins", sans-serif;
+  color: #748182;
+  font-weight: 400;
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.logo {
+  font-family: "Montserrat", sans-serif;
+  color: var(--primary-color);
+  line-height: 1.1;
+}
+:root {
+  --primary-color: #343434;
+  --bg-main-light: #f7f7f7;
+}
+.mynavbar .navbar-brand {
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+.main-color {
+  color: var(--primary-color);
+}
+.bg-main-color {
+  background-color: var(--primary-color);
+}
+.bg-light {
+  background-color: var(--bg-main-light);
+}
+.padding-section {
+  padding: 70px 0px;
+}
+
+/***** End Global style *****/
+
+/***** Start Navbar style *****/
+.mynavbar {
+  position: absolute;
+  width: 100%;
+  /* padding: 40px 0px; */
+}
+.logo {
+  font-weight: 800;
+}
+.mynavbar .nav-link {
+  text-align: center;
+}
+.mynavbar .nav-item .nav-link span {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  color: black;
+}
+
+.mynavbar .nav-item .nav-link span::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-bottom: 2px solid black;
+  transform: translateX(-100%);
+  transition: all 0.5s;
+}
+.mynavbar .nav-item .nav-link.active span::after {
+  transform: translateX(0);
+}
+nav button[aria-expanded="true"] ~ .navbar-collapse {
+  background-color: white;
+  z-index: 1;
+}
+.navbar-toggler:focus {
+  outline: 0;
+  box-shadow: 0 0 0;
+}
+/* nav button[aria-expanded="true"] ~ .navbar-collapse .nav-link {
+  color: black;
+}
+nav button[aria-expanded="true"] ~ .navbar-collapse .nav-link span::after {
+  border-color: black;
+} */
+
+/***** End Navbar style *****/
+
+/***** Start header style *****/
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../images/bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.gold-title {
+  font-weight: 400;
+  line-height: 1.2;
+}
+.home_content h6 {
+  font-size: 50px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.iam {
+  font-weight: 200;
+}
+.home_content a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+/***** End header style *****/
+/***** Start about style *****/
+
+.hero_img {
+  position: relative;
+}
+.hero_img::before {
+  content: "";
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  background-image: url(../images/dots.png);
+  left: -30px;
+  bottom: -30px;
+  z-index: -1;
+}
+.about_progress .progress {
+  margin-bottom: 30px;
+  height: 24px;
+}
+.progress-bar {
+  text-align: end;
+  position: relative;
+  background-color: #1c1c1c;
+}
+.prog1::before {
+  content: "Web Design";
+  position: absolute;
+  left: 5px;
+}
+.prog2::before {
+  content: "Branding";
+  position: absolute;
+  left: 5px;
+}
+.prog3::before {
+  content: "Development";
+  position: absolute;
+  left: 5px;
+}
+.buttn {
+  cursor: pointer;
+  padding: 10px 30px;
+  border: 1px solid #1c1c1c;
+  border-radius: 5px;
+  font-size: 13px;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+.btn1 {
+  background-color: #1c1c1c;
+  color: white;
+  transition: all 0.5s;
+}
+.btn1:hover {
+  background-color: transparent;
+  color: #1c1c1c;
+}
+.btn2 {
+  background-color: transparent;
+  color: #1c1c1c;
+  transition: all 0.5s;
+}
+.btn2:hover {
+  background-color: #1c1c1c;
+  color: white;
+}
+/***** End about style *****/
+
+/***** Start Services style *****/
+.services {
+  background-color: var(--bg-main-light);
+}
+.title {
+  margin-bottom: 30px;
+}
+.title h2 {
+  font-weight: 800;
+  font-size: 40px;
+  position: relative;
+  display: inline-block;
+  z-index: 4;
+}
+.title h2::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/dots.png);
+  background-repeat: repeat;
+  background-position: cover;
+  width: 100%;
+  height: 30px;
+  bottom: -25%;
+  left: 0;
+  z-index: -1;
+}
+.services .item {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  padding: 50px 20px;
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+}
+.S_icon {
+  height: 70px;
+  width: 70px;
+  font-size: 25px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+.services .item h3 {
+  margin-bottom: 15px;
+  font-weight: 800;
+  font-size: 18px;
+}
+.services .item p {
+  word-spacing: 2px;
+  line-height: 1.6;
+}
+.services .item:hover .S_icon {
+  background-color: #1c1c1c;
+  color: white;
+}
+/***** End Services style *****/
+/***** Start Works style *****/
+.work_navbar .nav-link {
+  color: #222;
+  font-weight: 700;
+  font-size: 16px;
+}
+.work_navbar .nav-link span {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+.work_navbar .nav-link span::before {
+  content: "";
+  width: 95%;
+  height: 2px;
+  background: #222;
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  transition: all 0.5s;
+  transform: translateX(-100%);
+}
+
+.work_navbar .nav-link.active span::before {
+  transform: translateX(0);
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #222;
+  background-color: transparent;
+}
+.works .tab-content img {
+  width: 100%;
+}
+.works .tab-content .item {
+  position: relative;
+  overflow: hidden;
+}
+.tab-content .item_layer {
+  position: absolute;
+  inset: 5px;
+  background-color: white;
+  transform: translateY(10px);
+  transition: all 0.7s;
+  opacity: 0;
+}
+.works .tab-content .item .icons {
+  transform: translateY(10px);
+  transition: all 0.7s;
+}
+.works .tab-content .item .icons a {
+  text-decoration: none;
+}
+.works .tab-content .item .icons i {
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  background-color: black;
+  color: white;
+  transition: all 0.6s;
+}
+.works .tab-content .item .icons i:hover {
+  background-color: white;
+  color: black;
+}
+.works .tab-content .item h5 {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  transform: translateY(-20px);
+  transition: all 0.6s;
+}
+.works .tab-content .item:hover .item_layer {
+  transform: translateY(0px);
+  opacity: 1;
+}
+.works .tab-content .item:hover .item_layer h5 {
+  transform: translateY(0px);
+}
+.works .tab-content .item:hover .item_layer .icons {
+  transform: translateY(0px);
+}
+/***** End Works style *****/
+
+/***** Start clients style *****/
+.clients {
+  background-color: var(--bg-main-light);
+}
+.clients .carousel img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.clients .carousel .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border: none;
+  background: #869791;
+  border-radius: 50%;
+  margin: 0px 5px;
+}
+.clients .my-carousel h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
+.clients .my-carousel p {
+  word-spacing: 2px;
+}
+.clients .my-carousel span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #888;
+  margin-bottom: 30px;
+}
+
+/***** End clients style *****/
+/***** Start survay style *****/
+.survay h6 {
+  font-weight: 900;
+}
+/***** End survay style *****/
+
+/***** Start team style *****/
+
+.team .card .card-body {
+  background-color: #5a5a5a;
+}
+
+.team .card_img {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+.team .card_img img {
+  transition: all 0.5s;
+}
+.team .card_layer {
+  position: absolute;
+  inset: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: rotateY(180deg) scale(0.5);
+  transition: all 0.5s;
+  opacity: 0;
+}
+.team .icons a {
+  text-decoration: none;
+  margin: 0px 7px;
+}
+.team .icons i {
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  padding: 0px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.team .card:hover .card_layer {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+
+.team .card_img:hover img {
+  transform: scale(1.2);
+}
+/***** End team style *****/
+
+/***** Start contact style *****/
+.contact .item i {
+  padding: 0px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+.contact_icon {
+  color: var(--primary-color);
+  background: #f4f4f4;
+}
+
+.contact .item p {
+  line-height: 1.6;
+  margin: 0;
+  font-size: 15px;
+  color: #748182;
+}
+.contact input {
+  outline: none !important;
+  box-shadow: 0 0 0 !important;
+  background-color: #f4f4f4 !important;
+  color: #343434;
+  font-size: 14px;
+  line-height: 1.42857143;
+  font-weight: 400;
+  border: none;
+}
+.contact textarea {
+  max-height: 180px;
+  height: 180px;
+  outline: none !important;
+  box-shadow: 0 0 0 !important;
+  background-color: #f4f4f4 !important;
+  border: none;
+  font-size: 14px;
+  line-height: 1.42857143;
+  font-weight: 400;
+}
+
+/***** End contact style *****/
+/***** Start footer style *****/
+footer p {
+  font-size: 13px;
+  word-spacing: 2px;
+  margin: 0px;
+  color: #748182;
+}
+footer {
+  background: #1c1c1c;
+  padding: 30px;
+  text-align: center;
+}
+/***** End footer style *****/
